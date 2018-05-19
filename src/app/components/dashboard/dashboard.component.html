@@ -1,0 +1,57 @@
+<!-- <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-purple">
+  <a class="navbar-brand" href="#">	<img src="../assets/img/mfitness-thumb.png" /></a>
+</nav> -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-purple">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">	<img src="../assets/img/mfitness-thumb.png" /></a>
+    <button class="navbar-toggler btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"  aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarTogglerDemo02">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Subscriptions <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Roles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Users</a>
+        </li>
+         
+      </ul>
+
+  </div>
+  </div>
+</nav>  
+	<div class="limiter">
+    <div class="container-login100" style="background-image: url('../assets/img/bg.jpg');">
+    <div class="container-fluid">
+
+      <div class="row chart-wrapper">
+        <div class="col-sm-8 col-md-6">
+          <fusioncharts
+            [id]="id"
+            [width]="width"
+            [height]="height"
+            [type]="type"
+            [dataFormat]="dataFormat"
+            [dataSource]="dataSource">
+          </fusioncharts>
+        </div>
+        <div class="col-sm-8 col-md-6">
+          <fusioncharts
+            [width]="width_pie"
+            [height]="height_pie"
+            [type]="type_pie"
+            [dataFormat]="dataFormat_pie"
+            [dataSource]="dataSource_pie">
+          </fusioncharts>
+        </div>
+    </div>
+    </div>
+
+
+  	</div>
+	</div>
