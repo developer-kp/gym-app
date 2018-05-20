@@ -1,0 +1,61 @@
+{
+    "data": [
+        {
+            "userId": 1,
+            "userName": "Arjun S Nair",
+            "address": "Attingal, Trivandrum",
+            "email": "arjun.s.nair@gmail.com",
+            "phoneNo": "1234567890",
+            "status": null,
+            "roleId": 1,
+            "organizationId": 1,
+            "inserterId": null
+        },
+        {
+            "userId": 2,
+            "userName": "Prajeesh Sobana",
+            "address": "Punalur, Kollam",
+            "email": "prajeesh.sobana@gmail.com",
+            "phoneNo": "1234567890",
+            "status": null,
+            "roleId": 1,
+            "organizationId": 1,
+            "inserterId": null
+        },
+        {
+            "userId": 3,
+            "userName": "Krishnaraj",
+            "address": "Paripally, Kollam",
+            "email": "krishnaraj@gmail.com",
+            "phoneNo": "1234567890",
+            "status": null,
+            "roleId": 1,
+            "organizationId": 1,
+            "inserterId": null
+        },
+        {
+            "userId": 4,
+            "userName": "Arun Kumar P",
+            "address": "Jagathy, Trivandrum",
+            "email": "arunkumarp@gmail.com",
+            "phoneNo": "1234567890",
+            "status": null,
+            "roleId": 1,
+            "organizationId": 1,
+            "inserterId": null
+        },
+        {
+            "userId": 5,
+            "userName": "Shyam Sagar S P",
+            "address": "Vilapilsala, Trivandrum",
+            "email": "shyamsagarsop@gmail.com",
+            "phoneNo": "1234567890",
+            "status": null,
+            "roleId": 1,
+            "organizationId": 1,
+            "inserterId": null
+        }
+    ],
+    "status": "",
+    "message": ""
+}

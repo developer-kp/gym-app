@@ -22,7 +22,7 @@
   </div>
   </div>
 </nav>   -->
-<div class="limiter">
+<!-- <div class="limiter">
     <div class="container-login1001" style="background-image: url('../assets/img/bg.jpg');">
         <div class="table-responsive">
             <table class="table">
@@ -59,11 +59,10 @@
             <button [routerLink]="['./add']">Add User</button>
         </div>
     </div>
-</div>
+</div> -->
 
 <div>
-    <ngx-datatable
-      [rows]="rows"
-      [columns]="columns">
+    <ngx-datatable class="material" [rows]="rows" [columns]="columns">
     </ngx-datatable>
-  </div>
+    <button [routerLink]="['./add']">Add User</button>
+</div>

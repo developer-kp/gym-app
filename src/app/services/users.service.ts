@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from './../class/user.class';
+import { CONSTANT } from './../constants';
 
 const httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -18,6 +19,10 @@ export class UsersService {
 
     addUser(user: User) {
         return this._http.post("http://tyxsteamz.com:8080/gm/v1/user", user, httpOptions);
+    }
+
+    getUsers() {
+        return this._http.get(CONSTANT.API.userService);
     }
 
 }
