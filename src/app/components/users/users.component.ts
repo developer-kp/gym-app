@@ -17,6 +17,8 @@ export class UsersComponent implements OnInit {
         { name: 'PhoneNo' },
         { name: 'Address' }
     ];
+    editing = {};
+    selected = [];
 
     constructor(
         private _userService: UsersService
@@ -41,4 +43,22 @@ export class UsersComponent implements OnInit {
         });
     }
 
+    updateValue(event, cell, rowIndex) {
+        console.log('inline editing rowIndex', rowIndex)
+        this.editing[rowIndex + '-' + cell] = false;
+        this.rows[rowIndex][cell] = event.target.value;
+        this.rows = [...this.rows];
+        console.log('UPDATED!', this.rows[rowIndex][cell]);
+    }
+
+    onSelect({ selected }) {
+        console.log('Select Event', selected, this.selected);
+
+        this.selected.splice(0, this.selected.length);
+        this.selected.push(...selected);
+    }
+
+    onActivate(event) {
+        console.log('Activate Event', event);
+    }Í
 }
